@@ -10,6 +10,5 @@
         public const decimal SeniorTicketDiscount = 0.3m;
         public const decimal ChildTicketDiscount = 0.25m;
         public const decimal StandardTicketDiscount = 0.0m;
-
     }
 }

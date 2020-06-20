@@ -8,14 +8,13 @@ namespace MovieTickets.CostAnalyzer.Tests.Unit.Theories
         public CostCalculatorTheories()
         {
             TransactionWithAllCustomerTypes();
-
         }
 
         private void TransactionWithAllCustomerTypes()
         {
             Add(nameof(TransactionWithAllCustomerTypes), new CostCalculatorTheoryData
             {
-                Input = new Transaction 
+                Input = new Transaction
                 {
                     TransactionId = 1,
                     Customers = new List<Customer>
@@ -42,8 +41,6 @@ namespace MovieTickets.CostAnalyzer.Tests.Unit.Theories
                 }
             });
         }
-
-   
     }
 
     public class CostCalculatorTheoryData
