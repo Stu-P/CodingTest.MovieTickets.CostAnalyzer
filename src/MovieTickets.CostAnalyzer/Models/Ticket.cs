@@ -8,6 +8,9 @@
 
         public virtual int QuantityNeededForDiscount => 0;
 
-        public decimal ApplyDiscount(int quantityPurchased) => Discount > 0 && quantityPurchased >= QuantityNeededForDiscount ? Price - (Price * Discount) : Price;
+        public decimal ApplyDiscount(int quantityPurchased) =>
+            Discount > 0 && quantityPurchased >= QuantityNeededForDiscount ?
+            Price - (Price * Discount) :
+            Price;
     }
 }
